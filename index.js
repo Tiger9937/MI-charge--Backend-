@@ -11,6 +11,10 @@ app.get('/Login' , (res , req)=>{
     res.send('Hello World!')
 })
 
+app.get('hot',()=>{
+  res.send("hello word 3")
+})
+
 
 console.log(process.env.PORT)
 app.listen(process.env.PORT, () => {
