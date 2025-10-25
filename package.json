@@ -1,0 +1,20 @@
+{
+  "name": "mi-charge",
+  "version": "1.0.0",
+  "description": "this app is is use to any one the nerest chargeing station",
+  "main": "index.js",
+  
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "jagannath",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
