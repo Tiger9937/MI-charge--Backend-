@@ -1,19 +1,23 @@
-const express = require('express')
+import express from 'express'
 const app = express()
-require('dotenv').config()
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+import dotenv from 'dotenv'
+
+import DB_conect from './src/DataBase/index.js'
+
+dotenv.config({
+    path:"./env"
 })
 
-app.get('/Login' , (res , req)=>{
-    res.send('Hello World!')
-})
 
-app.get('hot',()=>{
-  res.send("hello word 3")
-})
+DB_conect().then(
 
-app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${process.env.PORT}`)
-})
+    app.listen(process.env.PORT,()=>{
+      console.log("App is runing at Port " + process.env.PORT)
+    })
+).catch(
+  (err)=>{
+    console.log("Somthing is worng app is not runing" + err)
+  }
+)
+
