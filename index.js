@@ -1,6 +1,5 @@
 import express from 'express'
 const app = express()
-
 import dotenv from 'dotenv'
 
 import DB_conect from './src/DataBase/index.js'

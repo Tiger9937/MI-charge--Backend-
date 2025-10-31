@@ -9,6 +9,8 @@ const DB_conect = async()=>{
     } catch (error) {
         console.log(error,"Somthing wont worng")
     }
+
+    
 }   
 
 export default DB_conect
